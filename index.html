@@ -12,7 +12,6 @@
     <!-- Bulma Version 0.7.1-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/landing.css">
-    <!-- <link rel="stylesheet" href="css/cards.css"> -->
     <link rel="stylesheet" href="css/helper.css">
     <!-- <link rel="stylesheet" href="css/debug.css"> -->
 </head>
@@ -33,7 +32,7 @@
             <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-end">
                     <span class="navbar-item">
-                        <a class="button is-white is-outlined" href="#">
+                        <a class="button is-outlined" href="#">
                             <span class="icon">
                                 <i class="fa fa-home"></i>
                             </span>
@@ -41,7 +40,7 @@
                         </a>
                     </span>
                     <span class="navbar-item">
-                        <a class="button is-white is-outlined" href="#">
+                        <a class="button is-outlined" href="#about">
                             <span class="icon">
                                 <i class="fa fa-superpowers"></i>
                             </span>
@@ -49,7 +48,7 @@
                         </a>
                     </span>
                     <span class="navbar-item">
-                        <a class="button is-white is-outlined" href="#">
+                        <a class="button is-outlined" href="#projects">
                             <span class="icon">
                                 <i class="fa fa-superpowers"></i>
                             </span>
@@ -57,7 +56,7 @@
                         </a>
                     </span>
                     <span class="navbar-item">
-                        <a class="button is-white is-outlined" href="#">
+                        <a class="button is-outlined" href="#connect">
                             <span class="icon">
                                 <i class="fa fa-book"></i>
                             </span>
@@ -65,7 +64,7 @@
                         </a>
                     </span>
                     <span class="navbar-item">
-                        <a class="button is-white is-outlined" href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
+                        <a class="button is-outlined" href="resume/">
                             <span class="icon">
                                 <i class="fa fa-github"></i>
                             </span>
@@ -81,9 +80,12 @@
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h1 class="title">
-                    CHANTHY NGIN
+                    Hello, my name is Chanthy.
                 </h1>
-                <h2 class="subtitle is-paddingless is-marginless">Hello, nice to meet you!</h2>
+                <h1 class="title">
+                    Nice to meet you!
+                </h1>
+                <!-- <h2 class="subtitle is-paddingless is-marginless">Hello, nice to meet you!</h2> -->
                 <h2 class="subtitle is-paddingless is-marginless">
                     I am a full-stack web developer with a passion for code.
                 </h2>
@@ -144,6 +146,16 @@
                 <div class="row columns">
                     <div class="column is-one-third">
                         <div class="card large">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Wanderlust
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                    </span>
+                                </a>
+                            </header>
                             <div class="card-image">
                                 <figure class="image">
                                     <img src="images/wanderlust.png" alt="Image">
@@ -151,14 +163,13 @@
                             </div>
                             <div class="card-content">
                                 <div class="content">
-                                    <h1>Wanderlust</h1>
                                     <p>
                                         Collaborated with a team of 4 other developers, to complete an e-commerce clone application within one week. Wanderlust allows
                                         users to search products by location and activity, using full MEAN Stack technologies.
                                         Front­-end Angular connected RESTful API services provided by Express.js and MongoDB.
                                     </p>
                                     <p>
-                                        <span class="bold-blue">Used:</span> Node.js, Express.js, MongoDB, Mongoose, Angular 6, RxJS, Angular Materialize,
+                                        <span class="bold-blue">Used:</span> Node.js, Express.js, MongoDB, Mongoose, Angular 6, RxJS, Angular Material,
                                         Bootstrap 4, Auth0, Stripe API, RESTful API, Trello, JavaScript
                                     </p>
                                     <div class="background-icon">
@@ -166,10 +177,24 @@
                                     </div>
                                 </div>
                             </div>
+                            <footer class="card-footer">
+                                <a href="https://www.github.com/thydev/acommerce" target="_blank" class="card-footer-item">Github</a>
+                                <a href="javascript:alert('Coming soon!')" target="_blank" class="card-footer-item">Live Demo</a>
+                            </footer>
                         </div>
                     </div>
                     <div class="column is-one-third">
                         <div class="card large">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    FunRooms
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                    </span>
+                                </a>
+                            </header>
                             <div class="card-image">
                                 <figure class="image">
                                     <img src="images/funrooms.png" alt="Image">
@@ -177,7 +202,6 @@
                             </div>
                             <div class="card-content">
                                 <div class="content">
-                                    <h1>FunRooms</h1>
                                     <p>
                                         Multi-player ­game that allows user to play with hand­ gesture games after signing in. This application features a chat room,
                                         whiteboard room (allows users to draw or write on board simultaneously), 2 hand ­gesture
@@ -193,40 +217,53 @@
                                     </div>
                                 </div>
                             </div>
+                            <footer class="card-footer">
+                                <a href="https://www.github.com/thydev/funrooms" target="_blank" class="card-footer-item">Github</a>
+                                <a href="projects/EarthDefender/" target="_blank" class="card-footer-item">Play</a>
+                            </footer>
                         </div>
                     </div>
                     <div class="column is-one-third">
                         <div class="card large">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Dojodachi
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                    </span>
+                                </a>
+                            </header>
                             <div class="card-image">
                                 <figure class="image">
                                     <img src="images/dojodachi.png" alt="Image">
                                 </figure>
                             </div>
+                            <!-- Your Dojodachi should start with 20 happiness, 20 fullness, 50 energy, and 3 meals.
+
+                            After every button press, display a message showing how the Dojodachi reacted
+
+Feeding your Dojodachi costs 1 meal and gains a random amount of fullness between 5 and 10 (you cannot feed your Dojodachi if you do not have meals)
+Playing with your Dojodachi costs 5 energy and gains a random amount of happiness between 5 and 10
+
+Every time you play with or feed your dojodachi there should be a 25% chance that it won't like it. Energy or meals will still decrease, but happiness and fullness won't change.
+Working costs 5 energy and earns between 1 and 3 meals
+
+Sleeping earns 15 energy and decreases fullness and happiness each by 5
+
+If energy, fullness, and happiness are all raised to over 100, you win! a restart button should be displayed.
+
+If fullness or happiness ever drop to 0, you lose, and a restart button should be displayed. -->
                             <div class="card-content">
 
                                 <div class="content">
-                                    <h1>DojoDachi</h1>
                                     <p>
                                         A virtual pet game, a Dojodachi! Dojodachis have happiness, fullness, and energy that we need to max out. You can feed, play
                                         with, work, or sleep to manage these values. if you can get your Dojodachi's fullness,
                                         happiness, and energy above 100, you win! But if fullness or happiness falls to zero,
-                                        your Dojodachi will die :(.
+                                        your Dojodachi will die.
 
-                                        <!-- Your Dojodachi should start with 20 happiness, 20 fullness, 50 energy, and 3 meals.
- 
-                                        After every button press, display a message showing how the Dojodachi reacted
- 
-Feeding your Dojodachi costs 1 meal and gains a random amount of fullness between 5 and 10 (you cannot feed your Dojodachi if you do not have meals)
-Playing with your Dojodachi costs 5 energy and gains a random amount of happiness between 5 and 10
- 
-Every time you play with or feed your dojodachi there should be a 25% chance that it won't like it. Energy or meals will still decrease, but happiness and fullness won't change.
-Working costs 5 energy and earns between 1 and 3 meals
- 
-Sleeping earns 15 energy and decreases fullness and happiness each by 5
- 
-If energy, fullness, and happiness are all raised to over 100, you win! a restart button should be displayed.
- 
-If fullness or happiness ever drop to 0, you lose, and a restart button should be displayed. -->
                                     </p>
                                     <p>
                                         <span class="bold-blue">Used:</span> .NET Core 2.0, ASP.NET Core, HTML5, CSS3, AJAX , JavaScript, Bootstrap
@@ -237,6 +274,10 @@ If fullness or happiness ever drop to 0, you lose, and a restart button should b
                                     </div>
                                 </div>
                             </div>
+                            <footer class="card-footer">
+                                <a href="https://www.github.com/thydev/dojodachi" target="_blank" class="card-footer-item">Github</a>
+                                <a href="javascript:alert('Coming soon!')" target="_blank" class="card-footer-item">Play</a>
+                            </footer>
                         </div>
                     </div>
 
@@ -245,6 +286,16 @@ If fullness or happiness ever drop to 0, you lose, and a restart button should b
                 <div class="row columns">
                     <div class="column is-one-third">
                         <div class="card large">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Pacman
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                    </span>
+                                </a>
+                            </header>
                             <div class="card-image">
                                 <figure class="image">
                                     <img src="images/pacman.png" alt="Image">
@@ -252,7 +303,6 @@ If fullness or happiness ever drop to 0, you lose, and a restart button should b
                             </div>
                             <div class="card-content">
                                 <div class="content">
-                                    <h1>Pacman Game</h1>
                                     <p>
                                         <span class="bold-blue">Used:</span> Vanilla JavaScript, HTML5, CSS3
                                     </p>
@@ -261,10 +311,24 @@ If fullness or happiness ever drop to 0, you lose, and a restart button should b
                                     </div>
                                 </div>
                             </div>
+                            <footer class="card-footer">
+                                <a href="projects/pacman/" target="_blank" class="card-footer-item">Play Now</a>
+                            </footer>
                         </div>
+
                     </div>
                     <div class="column is-one-third">
                         <div class="card large">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Box Model
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                    </span>
+                                </a>
+                            </header>
                             <div class="card-image">
                                 <figure class="image">
                                     <img src="images/displayblock.png" alt="Image">
@@ -272,17 +336,29 @@ If fullness or happiness ever drop to 0, you lose, and a restart button should b
                             </div>
                             <div class="card-content">
                                 <div class="content">
-                                    <h1>Box Model - Margin, Border, Padding</h1>
 
                                     <div class="background-icon">
                                         <span class="icon-twitter"></span>
                                     </div>
                                 </div>
                             </div>
+                            <footer class="card-footer">
+                                <a href="projects/displayblocks/" target="_blank" class="card-footer-item">View Now</a>
+                            </footer>
                         </div>
                     </div>
                     <div class="column is-one-third">
                         <div class="card large">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Periodic Table
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <!-- <i class="fas fa-angle-down" aria-hidden="true"></i> -->
+                                    </span>
+                                </a>
+                            </header>
                             <div class="card-image">
                                 <figure class="image">
                                     <img src="images/periodictable2.png" alt="Image">
@@ -291,13 +367,15 @@ If fullness or happiness ever drop to 0, you lose, and a restart button should b
                             <div class="card-content">
 
                                 <div class="content">
-                                    <h1>Box Medel</h1>
 
                                     <div class="background-icon">
                                         <span class="icon-twitter"></span>
                                     </div>
                                 </div>
                             </div>
+                            <footer class="card-footer">
+                                <a href="projects/periodic_table/" target="_blank" class="card-footer-item">View Now</a>
+                            </footer>
                         </div>
                     </div>
 
