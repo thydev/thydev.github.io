@@ -12,6 +12,7 @@
     <!-- Bulma Version 0.7.1-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/landing.css">
+    <!-- <link rel="stylesheet" href="css/cards.css"> -->
     <link rel="stylesheet" href="css/helper.css">
     <!-- <link rel="stylesheet" href="css/debug.css"> -->
 </head>
@@ -75,22 +76,22 @@
             </div>
         </div>
     </nav>
+    <!-- Landing -->
     <section class="hero is-info is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <div class="column">
-                    <h2 class="subtitle">Hello, nice to meet you!</h2>
-                    <h1 class="title">
-                        CHANTHY NGIN
-                    </h1>
-                    <h2 class="subtitle">
-                        I am a full-stack web developer with a passion for code.
-                    </h2>
-                </div>
+                <h1 class="title">
+                    CHANTHY NGIN
+                </h1>
+                <h2 class="subtitle is-paddingless is-marginless">Hello, nice to meet you!</h2>
+                <h2 class="subtitle is-paddingless is-marginless">
+                    I am a full-stack web developer with a passion for code.
+                </h2>
             </div>
         </div>
-
     </section>
+    <!-- /Landing -->
+    <!-- About Me -->
     <section class="section is-fullheight about">
         <div class="container">
             <div class="columns">
@@ -125,8 +126,189 @@
 
         </div>
     </section>
+    <!-- /About Me -->
+    <!-- Projets -->
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <!-- Row Columns -->
+                <div class="row columns">
+                    <div class="column">
+                        <h1 class="title">Projects</h1>
+                        <h2 class="title is-5">
+                            Let check my works!
+                        </h2>
+                    </div>
+                </div>
+                <!-- Row Columns -->
+                <div class="row columns">
+                    <div class="column is-one-third">
+                        <div class="card large">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="images/wanderlust.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h1>Wanderlust</h1>
+                                    <p>
+                                        Collaborated with a team of 4 other developers, to complete an e-commerce clone application within one week. Wanderlust allows
+                                        users to search products by location and activity, using full MEAN Stack technologies.
+                                        Front­-end Angular connected RESTful API services provided by Express.js and MongoDB.
+                                    </p>
+                                    <p>
+                                        <span class="bold-blue">Used:</span> Node.js, Express.js, MongoDB, Mongoose, Angular 6, RxJS, Angular Materialize,
+                                        Bootstrap 4, Auth0, Stripe API, RESTful API, Trello, JavaScript
+                                    </p>
+                                    <div class="background-icon">
+                                        <span class="icon-twitter"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card large">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="images/funrooms.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h1>FunRooms</h1>
+                                    <p>
+                                        Multi-player ­game that allows user to play with hand­ gesture games after signing in. This application features a chat room,
+                                        whiteboard room (allows users to draw or write on board simultaneously), 2 hand ­gesture
+                                        games, and one shooting game.
+                                    </p>
+                                    <p>
+                                        <span class="bold-blue">Used:</span> .NET Core 2.1, ASP.NET Core MVC, SignalR Core, sqlite3, ASP.NET Core
+                                        Identity, third party authentication (Google+, Facebook), WebSocket, JavaScript,
+                                        Phaser.io, Bootstrap 3, jQuery
+                                    </p>
+                                    <div class="background-icon">
+                                        <span class="icon-twitter"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card large">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="images/dojodachi.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
 
-    <section class="hero is-fullheight projects is-dark">
+                                <div class="content">
+                                    <h1>DojoDachi</h1>
+                                    <p>
+                                        A virtual pet game, a Dojodachi! Dojodachis have happiness, fullness, and energy that we need to max out. You can feed, play
+                                        with, work, or sleep to manage these values. if you can get your Dojodachi's fullness,
+                                        happiness, and energy above 100, you win! But if fullness or happiness falls to zero,
+                                        your Dojodachi will die :(.
+
+                                        <!-- Your Dojodachi should start with 20 happiness, 20 fullness, 50 energy, and 3 meals.
+ 
+                                        After every button press, display a message showing how the Dojodachi reacted
+ 
+Feeding your Dojodachi costs 1 meal and gains a random amount of fullness between 5 and 10 (you cannot feed your Dojodachi if you do not have meals)
+Playing with your Dojodachi costs 5 energy and gains a random amount of happiness between 5 and 10
+ 
+Every time you play with or feed your dojodachi there should be a 25% chance that it won't like it. Energy or meals will still decrease, but happiness and fullness won't change.
+Working costs 5 energy and earns between 1 and 3 meals
+ 
+Sleeping earns 15 energy and decreases fullness and happiness each by 5
+ 
+If energy, fullness, and happiness are all raised to over 100, you win! a restart button should be displayed.
+ 
+If fullness or happiness ever drop to 0, you lose, and a restart button should be displayed. -->
+                                    </p>
+                                    <p>
+                                        <span class="bold-blue">Used:</span> .NET Core 2.0, ASP.NET Core, HTML5, CSS3, AJAX , JavaScript, Bootstrap
+                                        3, jQuery
+                                    </p>
+                                    <div class="background-icon">
+                                        <span class="icon-twitter"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Row Columns -->
+                <div class="row columns">
+                    <div class="column is-one-third">
+                        <div class="card large">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="images/pacman.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h1>Pacman Game</h1>
+                                    <p>
+                                        <span class="bold-blue">Used:</span> Vanilla JavaScript, HTML5, CSS3
+                                    </p>
+                                    <div class="background-icon">
+                                        <span class="icon-twitter"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card large">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="images/displayblock.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h1>Box Model - Margin, Border, Padding</h1>
+
+                                    <div class="background-icon">
+                                        <span class="icon-twitter"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card large">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="images/periodictable2.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+
+                                <div class="content">
+                                    <h1>Box Medel</h1>
+
+                                    <div class="background-icon">
+                                        <span class="icon-twitter"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Row Columns -->
+            </div>
+        </div>
+    </section>
+    <!-- /Projets -->
+
+    <section class="hero is-fullheight projects ">
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="column is-6 is-offset-3">

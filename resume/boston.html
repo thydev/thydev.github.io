@@ -74,7 +74,7 @@
                     <h1>Chanthy Ngin</h1>
                     <!-- <h3 class="position-title">Full-Stack Web Developer</h3> -->
                     <!-- <h3 class="position-title">Software Engineer</h3> -->
-                    <h3 class="position-title">Software Engineer</h3>
+                    <h3 class="position-title">Front-End Software Engineer</h3>
                 </div>
                 <hr />
                 <div class="contact">
@@ -107,10 +107,9 @@
                 <h2 class="skill-title">
                     <i class="fas fa-code"></i> Languages</h2>
                 <p class="tags skill-content">
+                    <span class="tag is-white">C#</span>
                     <span class="tag is-white">JavaScript</span>
                     <span class="tag is-white">TypeScript</span>
-                    <span class="tag is-white">C#</span>
-                    <span class="tag is-white">Python</span>
                     <span class="tag is-white">SQL</span>
                     <span class="tag is-white">HTML5</span>
                     <span class="tag is-white">CSS3</span>
@@ -120,18 +119,17 @@
                 <h2 class="skill-title">
                     <i class="fas fa-book"></i> Libraries - Frameworks</h2>
                 <p class="tags skill-content">
-                    <span class="tag is-white">Node.js</span>
-                    <span class="tag is-white">Express.js</span>
-                    <span class="tag is-white">Socket.IO</span>
+                    <span class="tag is-white">ASP.NET Core</span>
+                    <span class="tag is-white">ASP.NET Core MVC</span>
+                    <span class="tag is-white">Entity Framework Core</span>
                     <span class="tag is-white">Angular</span>
+                    <span class="tag is-white">npm</span>
+                    <span class="tag is-white">Socket.IO</span>
                     <span class="tag is-white">jQuery</span>
                     <span class="tag is-white">AJAX</span>
-                    <span class="tag is-white">Django</span>
-                    <span class="tag is-white">Flask</span>
                     <span class="tag is-white">Dapper</span>
-                    <span class="tag is-white">ASP.NET Core</span>
-                    <span class="tag is-white">Entity Framework Core</span>
                     <span class="tag is-white">Bootstrap</span>
+                    <span class="tag is-white">Bulma</span>
                 </p>
             </div>
             <div class="skills">
@@ -149,22 +147,25 @@
                 <h2 class="skill-title">
                     <i class="fas fa-database"></i> Databases</h2>
                 <p class="tags skill-content">
-                    <span class="tag is-white">MongoDB</span>
+                    <span class="tag is-white">Microsoft SQL Server</span>
                     <span class="tag is-white">MySQL</span>
+                    <span class="tag is-white">MongoDB</span>
                     <span class="tag is-white">PostgreSQL</span>
                     <span class="tag is-white">SQLite</span>
-                    <span class="tag is-white">Microsoft SQL Server</span>
                 </p>
             </div>
             <div class="skills">
                 <h2 class="skill-title">
                     <i class="fas fa-globe"></i> Tools</h2>
                 <p class="tags skill-content">
-                    <span class="tag is-white">CodePen</span>
+                    <span class="tag is-white">RESTful API</span>
+                    <span class="tag is-white">Web API</span>
                     <span class="tag is-white">Postman</span>
+                    <span class="tag is-white">Webpack</span>
+                    <span class="tag is-white">Angular Material</span>
+                    <span class="tag is-white">CodePen</span>
                     <span class="tag is-white">Git</span>
                     <span class="tag is-white">Github</span>
-                    <span class="tag is-white">RESTful API</span>
                     <span class="tag is-white">JSON</span>
                     <span class="tag is-white">ES5</span>
                     <span class="tag is-white">ES6</span>
@@ -172,7 +173,6 @@
                     <span class="tag is-white">SignalR Core</span>
                     <span class="tag is-white">HTTPS</span>
                     <span class="tag is-white">OOP</span>
-                    <span class="tag is-white">Angular Material</span>
                 </p>
             </div>
             <div class="skills">
@@ -218,66 +218,7 @@
                 </div>
             </div>
             <!-- Diamond Skills -->
-            <div class="skills">
-                <h2 class="skill-title chart-title">
-                    <i class="far fa-clock"></i> Post-BootCamp Typical Day</h2>
-                <div class="chart">
-                    <canvas id="myChart" height="220px"></canvas>
-                </div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-                <script src="js/patternomaly.js"></script>
-                <script>
-                    var ctx = document.getElementById('myChart').getContext('2d');
-                    var myDoughnutChart = new Chart(ctx, {
-                        type: 'doughnut',
-                        data: {
-                            labels: [
-                                'Algorithms',
-                                'Planning',
-                                'Side Project',
-                                'Eat Lunch',
-                                'Project / Interview Practice',
-                                'Reach out / Complete EOD Goal',
-                                'Eat Dinner',
-                                'Hackathon / Networking'
-                            ],
-                            datasets: [{
-                                label: 'Post BootCamp',
-                                backgroundColor: [
-                                    pattern.draw('plus', '#ec3324'),
-                                    pattern.draw('cross', '#71fa4c'),
-                                    pattern.draw('dash', '#001DF5'),
-                                    pattern.draw('ring', '#EC3CF7'),
-                                    pattern.draw('square', '#ff6384'),
-                                    pattern.draw('circle', '#F08533'),
-                                    pattern.draw('diamond', '#cc65fe'),
-                                    pattern.draw('triangle', '#ffce56'),
-                                ],
-                                borderColor: 'rgb(255, 255, 255)',
-                                data: [
-                                    1,
-                                    0.5,
-                                    3,
-                                    0.5,
-                                    2,
-                                    2,
-                                    0.5,
-                                    2
-                                ],
-                            }]
-                        },
-                        options: {
-                            legend: {
-                                display: true,
-                                labels: {
-                                    fontColor: 'rgb(255, 255, 255)'
-                                },
-                                position: 'bottom',
-                            }
-                        }
-                    });
-                </script>
-            </div>
+
         </div>
         <!-- Right Column -->
         <div class="col-2">
@@ -288,10 +229,10 @@
             </section>
             <section class="summary">
                 <p>
-                    Self­ sufficient, well­-rounded web developer with training in full-stack web development (C# / ASP.NET Core/MVC, MEAN (MongoDB,
-                    Express, Angular, Node.js), and Python stacks), and constantly seeking new languages and technologies
-                    to learn. Excellent leadership, problem solving, people management, and communication skills. Looking
-                    for a career with a creative team of problem-solvers to develop applications that are useful and impactful.
+                    Self­ sufficient, well­-rounded web developer with training in modern web development technologies, and constantly seeking
+                    new languages and technologies to learn. Team player, willing to do whatever it takes to help the team
+                    succeed: front-end, back-end and everything in between. Looking for a career with a creative team of
+                    problem-solvers to develop applications that can improve user's experience and production.
                 </p>
             </section>
             <section class="right-content">
@@ -299,40 +240,7 @@
                 <h2>Projects</h2>
                 <hr />
             </section>
-            <section class="project">
-                <div class="project-title">
-                    <div class="left">
-                        Wanderlust - MEAN Stack
-                    </div>
-                    <div class="right">
-                        <i class="fab fa-github"></i>
-                        <a href="https://www.github.com/thydev/acommerce" target="_blank">
-                            Github.com/thydev/acommerce</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p>
-                        Collaborated with a team of 4 other developers, to complete an e-commerce clone application within one week. Wanderlust allows
-                        users to search products by location and activity, using full MEAN Stack technologies. Front­-end
-                        Angular connected RESTful API services provided by Express.js and MongoDB.
-                    </p>
-                    <ul>
-                        <li>Third-Party Authentication Login using tokens from Auth0.</li>
-                        <li>Facial Recognition Login/Registration aided from Kairos API.</li>
-                        <li>Stripe API for credit card processing to complete orders.</li>
-                    </ul>
-                    <p>
-                        <span class="bold-blue">Responsibilities:</span>
-                        Lead the development of all back­end work; including all RESTful routes, database design, and application architecture. Front-­end:
-                        Seller Management, Product Management pages.
-                    </p>
-                    <p>
-                        <span class="bold-blue">Used:</span> Node.js, Express.js, MongoDB, Mongoose, Angular 6, RxJS, Angular Materialize, Bootstrap
-                        4, Auth0, Stripe API, RESTful API, Trello, JavaScript
-                    </p>
 
-                </div>
-            </section>
             <section class="project">
                 <div class="project-title">
                     <div class="left">
@@ -360,7 +268,41 @@
                     <p>
                         <span class="bold-blue">Used:</span> .NET Core 2.1, ASP.NET Core MVC, SignalR Core, sqlite3, ASP.NET Core Identity, third
                         party authentication (Google+, Facebook, Twitter), WebSocket, JavaScript, Phaser.io, Bootstrap 3,
-                        jQuery
+                        jQuery, HTML5, CSS3, AJAX, JSON.
+                    </p>
+
+                </div>
+            </section>
+            <section class="project">
+                <div class="project-title">
+                    <div class="left">
+                        Wanderlust - MEAN Stack
+                    </div>
+                    <div class="right">
+                        <i class="fab fa-github"></i>
+                        <a href="https://www.github.com/thydev/acommerce" target="_blank">
+                            Github.com/thydev/acommerce</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>
+                        Collaborated with a team of 4 other developers, to complete an e-commerce clone application within one week. Wanderlust allows
+                        users to search products by location and activity, using full MEAN Stack technologies. Front­-end
+                        Angular connected RESTful API services provided by Express.js and MongoDB.
+                    </p>
+                    <ul>
+                        <li>Third-Party Authentication Login using tokens from Auth0.</li>
+                        <li>Facial Recognition Login/Registration aided from Kairos API.</li>
+                        <li>Stripe API for credit card processing to complete orders.</li>
+                    </ul>
+                    <p>
+                        <span class="bold-blue">Responsibilities:</span>
+                        Lead the development of all back­end work; including all RESTful routes, database design, and application architecture. Front­-end:
+                        Seller Management, Product Management pages.
+                    </p>
+                    <p>
+                        <span class="bold-blue">Used:</span> Node.js, Express.js, MongoDB, Mongoose, Angular 6, RxJS, Angular Materialize, Bootstrap
+                        4, Auth0, Stripe API, RESTful API, Trello, JavaScript, TypeScript.
                     </p>
 
                 </div>
