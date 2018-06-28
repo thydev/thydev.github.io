@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+}
+
+.row   {
+    line-height: 0;
+}
+
+.wall {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.sushi {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('images/coin.png');
+    background-size: contain;
+}
+
+.onigiri {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('images/coin.png');
+    background-size: contain;
+}
+
+.ghost1 {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('images/bluey.gif');
+    background-size: contain;
+}
+.ghost2 {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('images/pinky.gif');
+    background-size: contain;
+}
+.ghost3 {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('images/pumpky.gif');
+    background-size: contain;
+}
+.ghost4 {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('images/red.gif');
+    background-size: contain;
+}
+
+.blank {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+#ninjaman {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('images/pacman.gif');
+    background-size: contain;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#scoreboard {
+ padding: 20px;
+}
+.score {
+    /*background-color: lightcyan;*/
+    font-family: cursive;
+    width: 500px;
+    height: 40px;
+}
+
+#score {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: blue;
+    font-size: 20px;
+    display: inline;
+}
+#life {
+    display: inline;
+    color: red;
+}
