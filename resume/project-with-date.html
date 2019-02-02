@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon-2.ico" type="image/x-icon">
     <link rel="manifest" href="./images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -77,10 +74,11 @@
                     <h1>Chanthy Ngin</h1>
                     <!-- <h3 class="position-title">Full-Stack Web Developer</h3> -->
                     <h3 class="position-title">Software Engineer</h3>
-
+                    <!-- <h3 class="position-title">Web Developer</h3> -->
                 </div>
                 <hr />
                 <div class="contact">
+
                     <a href="http://thydev.com" target="_blank">
                         <i class="fas fa-lg fa-globe"></i> thydev.com
                     </a>
@@ -109,9 +107,10 @@
                 <h2 class="skill-title">
                     <i class="fas fa-code"></i> Languages</h2>
                 <p class="tags skill-content">
-                    <span class="tag is-white">C#</span>
                     <span class="tag is-white">JavaScript</span>
                     <span class="tag is-white">TypeScript</span>
+                    <span class="tag is-white">C#</span>
+                    <span class="tag is-white">Python</span>
                     <span class="tag is-white">SQL</span>
                     <span class="tag is-white">HTML5</span>
                     <span class="tag is-white">CSS3</span>
@@ -121,12 +120,17 @@
                 <h2 class="skill-title">
                     <i class="fas fa-book"></i> Libraries - Frameworks</h2>
                 <p class="tags skill-content">
-                    <span class="tag is-white">ASP.NET Core</span>
-                    <span class="tag is-white">Entity Framework Core</span>
+                    <span class="tag is-white">Node.js</span>
+                    <span class="tag is-white">Express.js</span>
+                    <span class="tag is-white">Socket.IO</span>
                     <span class="tag is-white">Angular</span>
-                    <span class="tag is-white">Dapper</span>
                     <span class="tag is-white">jQuery</span>
                     <span class="tag is-white">AJAX</span>
+                    <span class="tag is-white">Django</span>
+                    <span class="tag is-white">Flask</span>
+                    <span class="tag is-white">Dapper</span>
+                    <span class="tag is-white">ASP.NET Core</span>
+                    <span class="tag is-white">Entity Framework Core</span>
                     <span class="tag is-white">Bootstrap</span>
                 </p>
             </div>
@@ -154,7 +158,7 @@
             </div>
             <div class="skills">
                 <h2 class="skill-title">
-                    <i class="fas fa-globe"></i> Tools - Others</h2>
+                    <i class="fas fa-globe"></i> Tools</h2>
                 <p class="tags skill-content">
                     <span class="tag is-white">CodePen</span>
                     <span class="tag is-white">Postman</span>
@@ -166,8 +170,7 @@
                     <span class="tag is-white">ES6</span>
                     <span class="tag is-white">D3.js</span>
                     <span class="tag is-white">SignalR Core</span>
-                    <span class="tag is-white">MVC</span>
-                    <span class="tag is-white">HTTP/S</span>
+                    <span class="tag is-white">HTTPS</span>
                     <span class="tag is-white">OOP</span>
                     <span class="tag is-white">Angular Material</span>
                 </p>
@@ -215,164 +218,93 @@
                 </div>
             </div>
             <!-- Diamond Skills -->
-
+            <div class="skills post-bootcamp">
+                <h2 class="skill-title chart-title">
+                    <i class="far fa-clock"></i> Post-BootCamp Typical Day</h2>
+                <div class="chart">
+                    <canvas id="myChart" height="220px"></canvas>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+                <script src="js/patternomaly.js"></script>
+                <script>
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var myDoughnutChart = new Chart(ctx, {
+                        type: 'doughnut',
+                        data: {
+                            labels: [
+                                'Algorithms',
+                                'Planning',
+                                'Side Project',
+                                'Eat Lunch',
+                                'Project / Interview Practice',
+                                'Reach out / Complete EOD Goal',
+                                'Eat Dinner',
+                                'Hackathon / Networking'
+                            ],
+                            datasets: [{
+                                label: 'Post BootCamp',
+                                backgroundColor: [
+                                    pattern.draw('plus', '#ec3324'),
+                                    pattern.draw('cross', '#71fa4c'),
+                                    pattern.draw('dash', '#001DF5'),
+                                    pattern.draw('ring', '#EC3CF7'),
+                                    pattern.draw('square', '#ff6384'),
+                                    pattern.draw('circle', '#F08533'),
+                                    pattern.draw('diamond', '#cc65fe'),
+                                    pattern.draw('triangle', '#ffce56'),
+                                ],
+                                borderColor: 'rgb(255, 255, 255)',
+                                data: [
+                                    1,
+                                    0.5,
+                                    3,
+                                    0.5,
+                                    2,
+                                    2,
+                                    0.5,
+                                    2
+                                ],
+                            }]
+                        },
+                        options: {
+                            legend: {
+                                display: true,
+                                labels: {
+                                    fontColor: 'rgb(255, 255, 255)'
+                                },
+                                position: 'bottom',
+                            }
+                        }
+                    });
+                </script>
+            </div>
         </div>
         <!-- Right Column -->
         <div class="col-2">
-            <!-- Experiences -->
-            <section class="right-content">
-                    <hr />
-                    <h2>Professional Experience</h2>
-                    <hr />
-                </section>
-                <section class="project">
-                    <div class="experience-position bold-blue">Software Design Engineer 2 (Contract)</div>
-                    <div class="project-title">
-                        <div class="left">
-                            Microsoft,
-                            <i class="fas fa-map-marker-alt"></i> Bellevue, WA
-                        </div>
-                        <div class="right right-date">
-                            <i class="far fa-calendar-alt"></i> Aug 2018 - Present
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>
-                                Build HitApps (Human Intelligent Task Application) on top of UHRS system to enable various human tasks, such as data collection and data annotation. 
-                                Connect the HitApps with backend quality control system for automatic quality improvement.
-                            </li>
-                            <li>
-                                <span class="bold-blue">Used:</span> HTML, CSS, JavaScript, JQuery, C#, Azure, VSTS, UHRS xPlate,
-                                Webpack
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="project">
-                    <div class="experience-position bold-blue">Production Assembler/Specialist</div>
-                    <div class="project-title">
-                        <div class="left">
-                            Genie Industry,
-                            <i class="fas fa-map-marker-alt"></i> Redmond, WA United States
-                        </div>
-                        <div class="right right-date">
-                            <i class="far fa-calendar-alt"></i> July 2016 - Jan 2018
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>
-                                Completed sub-assemblies within specific tolerances, assembly of components requiring three or more sub-steps, and use of
-                                all hand and power-assisted tools.
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="project">
-                    <div class="experience-position bold-blue">Software Developer</div>
-                    <div class="project-title">
-                        <div class="left">
-                            Netsoft Cambodia,
-                            <i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia
-                        </div>
-                        <div class="right right-date">
-                            <i class="far fa-calendar-alt"></i> Nov 2008 - Nov 2011
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>Delivered a client­-server desktop application for a tax consultant to manage business transactions
-                                and return printable monthly­-yearly tax return forms.</li>
-                            <li>Built a team of 4 developers and lead the supervision, training, and mentoring of new developers.</li>
-                            <li>
-                                <span class="bold-blue">Used:</span> VB6, VS 2003 – 2005 -2010, VB.net, MS SQL Server, MS Access, HTML, CSS, XML, JQuery,
-                                Ajax, Adobe Dreamweaver, Adobe Flash, MS Visio, MS Project, Mercurial, NHibernate, Crystal Report.</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="project">
-                    <div class="experience-position bold-blue">Software Developer</div>
-                    <div class="project-title">
-                        <div class="left">
-                            AsiaForm Co., Ltd,
-                            <i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia
-                        </div>
-                        <div class="right right-date">
-                            <i class="far fa-calendar-alt"></i> Dec 2005 - Oct 2008
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>Delivered a windows application that manages patient data for medical and/or social organizations
-                                and creates a dynamic survey which generates reports based on survey data.
-                            </li>
-                            <li>Deployed a VB.NET 2003 windows application and an ASP.NET web application with a SQL Server 2000
-                                database. App manages patients for medical and/or social organizations and can manage pharmacies
-                                stock, patient’s dispensing, creates dynamic survey and generates statistics reports based on
-                                survey data, and forecasts based on medicine consumptions and outputs. </li>
-                            <li>
-                                <span class="bold-blue">Used:</span> MS Visual Studio, VB.net, VB6, ASP, Windows Form, MS SQL Server 2000, MS SQL Server
-                                2005, Crystal Report, HTML Report, HTML, Javascript, CSS.</li>
-                        </ul>
-                    </div>
-                </section>
-                <!-- Summary -->
-
-            <!-- <hr class="top-line" />
+            <hr class="top-line" />
             <section class="right-content">
                 <h2 class="">Summary</h2>
                 <hr />
             </section>
             <section class="summary">
                 <p>
-                    Self­ sufficient, well­-rounded web developer with training in full-stack web development C#/ASP.NET Core/MVC and constantly
-                    seeking new languages and technologies to learn. Excellent leadership, problem solving, people management,
-                    and communication skills. Looking for a career with a creative team of problem-solvers to develop applications
-                    that are useful and impactful.
+                    Self­ sufficient, well­-rounded web developer with training in full-stack web development (C# / ASP.NET Core/MVC, MEAN (MongoDB,
+                    Express, Angular, Node.js), and Python stacks), and constantly seeking new languages and technologies
+                    to learn. Excellent leadership, problem solving, people management, and communication skills. Looking
+                    for a career with a creative team of problem-solvers to develop applications that are useful and impactful.
                 </p>
-            </section> -->
+            </section>
             <section class="right-content">
                 <hr />
-                <h2>Side Projects</h2>
+                <h2>Projects</h2>
                 <hr />
             </section>
             <section class="project">
                 <div class="project-title">
                     <div class="left">
-                        FunRooms - .NET Core / C# Stack
-                    </div>
-                    <div class="right">
-                        <i class="fab fa-github"></i>
-                        <a href="https://www.github.com/thydev/funrooms" target="_blank">
-                            Github.com/thydev/funrooms</a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p>
-                        Multi-player ­game that allows user to play with hand­ gesture games after signing in. This application features a chat room,
-                        whiteboard room (allows users to draw or write on board simultaneously), 2 hand ­gesture games, and
-                        one shooting game.
-
-                    </p>
-                    <p>
-                        <span class="bold-blue">Responsibilities:</span>
-                        Lead the development, design application architecture, making a boilerplate and SingalR samples. Earth­Defenders: 1 player
-                        2­D asteroid shooter game utilizing Phaser.io game framework. Project deployment with https.
-
-                    </p>
-                    <p>
-                        <span class="bold-blue">Used:</span> .NET Core 2.1, ASP.NET Core MVC, SignalR Core, sqlite3, ASP.NET Core Identity, third
-                        party authentication (Google+, Facebook, Twitter), WebSocket, JavaScript, Phaser.io, Bootstrap 3,
-                        jQuery
-                    </p>
-
-                </div>
-            </section>
-            <section class="project">
-                <div class="project-title">
-                    <div class="left">
-                        Wanderlust
+                        Wanderlust - MEAN Stack
+                        <i class="fas fa-map-marker-alt"></i> Coding Dojo
+                        <i class="far fa-calendar-alt"></i> Feb 2018 - May 2018
                     </div>
                     <div class="right">
                         <i class="fab fa-github"></i>
@@ -397,14 +329,121 @@
                         Seller Management, Product Management pages.
                     </p>
                     <p>
-                        <span class="bold-blue">Used:</span> Node.js, Express.js, MongoDB, Mongoose, Angular 6, RxJS, Angualr Mterial, Bootstrap
+                        <span class="bold-blue">Used:</span> Node.js, Express.js, MongoDB, Mongoose, Angular 6, RxJS, Angular Material, Bootstrap
                         4, Auth0, Stripe API, RESTful API, Trello, JavaScript
                     </p>
 
                 </div>
             </section>
+            <section class="project">
+                <div class="project-title">
+                    <div class="left">
+                        FunRooms - .NET Core
+                        <i class="fas fa-map-marker-alt"></i> Coding Dojo
+                        <i class="far fa-calendar-alt"></i> Feb 2018 - May 2018
+                    </div>
 
-            
+                    <div class="right">
+                        <i class="fab fa-github"></i>
+                        <a href="https://www.github.com/thydev/funrooms" target="_blank">
+                            Github.com/thydev/funrooms</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>
+                        Multi-player ­game that allows user to play with hand­ gesture games after signing in. This application features a chat room,
+                        whiteboard room (allows users to draw or write on board simultaneously), 2 hand ­gesture games, and
+                        one shooting game.
+
+                    </p>
+                    <p>
+                        <span class="bold-blue">Responsibilities:</span>
+                        Lead the development, design application architecture, making a boilerplate and SignalR samples. Earth­Defenders: 1 player
+                        2­D asteroid shooter game utilizing Phaser.io game framework. Project deployment with https.
+
+                    </p>
+                    <p>
+                        <span class="bold-blue">Used:</span> .NET Core 2.1, ASP.NET Core MVC, SignalR Core, sqlite3, ASP.NET Core Identity, third
+                        party authentication (Google+, Facebook, Twitter), WebSocket, JavaScript, Phaser.io, Bootstrap 3,
+                        jQuery
+                    </p>
+
+                </div>
+            </section>
+            <!-- Experiences -->
+            <section class="right-content">
+                <hr />
+                <h2>Professional Experience</h2>
+                <hr />
+            </section>
+            <section class="project">
+                <div class="experience-position bold-blue">Production Assembler/Specialist</div>
+                <div class="project-title">
+                    <div class="left">
+                        Genie Industry,
+                        <i class="fas fa-map-marker-alt"></i> Redmond, WA United States
+                    </div>
+                    <div class="right right-date">
+                        <i class="far fa-calendar-alt"></i> July 2016 - Jan 2018
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul>
+                        <li>
+                            Completed sub-assemblies within specific tolerances, assembly of components requiring three or more sub-steps, and use of
+                            all hand and power-assisted tools.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="project">
+                <div class="experience-position bold-blue">Software Developer</div>
+                <div class="project-title">
+                    <div class="left">
+                        Netsoft Cambodia,
+                        <i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia
+                    </div>
+                    <div class="right right-date">
+                        <i class="far fa-calendar-alt"></i> Nov 2008 - Nov 2011
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul>
+                        <li>Delivered a client­-server desktop application for a tax consultant to manage business transactions
+                            and return printable monthly­-yearly tax return forms.</li>
+                        <li>Built a team of 4 developers and lead the supervision, training, and mentoring of new developers.</li>
+                        <li>
+                            <span class="bold-blue">Used:</span> VB6, VS 2003 – 2005 -2010, VB.NET, MS SQL Server, MS Access, HTML, CSS, XML, jQuery,
+                            Ajax, Adobe Dreamweaver, Adobe Flash, MS Visio, MS Project, Mercurial, NHibernate, Crystal Report.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="project">
+                <div class="experience-position bold-blue">Software Developer</div>
+                <div class="project-title">
+                    <div class="left">
+                        AsiaForm Co., Ltd,
+                        <i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia
+                    </div>
+                    <div class="right right-date">
+                        <i class="far fa-calendar-alt"></i> Dec 2005 - Oct 2008
+                    </div>
+                </div>
+                <div class="project-content">
+                    <ul>
+                        <li>Delivered a windows application that manages patient data for medical and/or social organizations
+                            and creates a dynamic survey which generates reports based on survey data.
+                        </li>
+                        <li>Deployed a VB.NET 2003 windows application and an ASP.NET web application with a SQL Server 2000
+                            database. App manages patients for medical and/or social organizations and can manage pharmacies
+                            stock, patient’s dispensing, creates dynamic survey and generates statistics reports based on
+                            survey data, and forecasts based on medicine consumptions and outputs. </li>
+                        <li>
+                            <span class="bold-blue">Used:</span> MS Visual Studio, VB.NET, VB6, ASP, Windows Form, MS SQL Server 2000, MS SQL Server
+                            2005, Crystal Report, HTML Report, HTML, Javascript, CSS.</li>
+                    </ul>
+                </div>
+            </section>
             <!-- Educations and Trainings -->
             <section class="right-content">
                 <hr />
@@ -435,8 +474,6 @@
             <section class="project">
 
                 <div class="experience-position bold-blue">Master of Science in Information Technology</div>
-
-
                 <div class="experience-position bold-blue">Bachelor of Science in Computer Science & Engineering</div>
 
                 <div class="project-title">
